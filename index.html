@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+	<title>destraynor</title>
+	<meta http-equiv="Content-Language" content="en-us" />
+	
+	<meta name="author" content="Niall Doherty" />
+	
+	<!-- Begin Stylesheets -->
+		<link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="stylesheets/coda-slider-2.0.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Lato:regular,900italic' rel='stylesheet' type='text/css'>
+		
+	<!-- End Stylesheets -->
+	
+	<!-- Begin JavaScript -->
+		<script type="text/javascript" src="javascripts/jquery-1.3.2.min.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.coda-slider-2.0.js"></script>
+		 <script type="text/javascript">
+		var numpix = 4;
+			$(document).ready(function() {
+				$('#coda-slider-1').codaSlider();
+				
+				$('body').addClass( "Background" + Math.floor( Math.random() * numpix) );
+				});
+			function toggleUp()
+			{
+				//1. Get the existing class 
+				var classname = $('body').attr('class');
+				//2. Get it as a number
+				var classnumber = classname.charAt(classname.length-1);
+				//3. Increment it or roll around
+				classnumber++;
+				if (classnumber == numpix){
+					classnumber=0;
+				}
+				var newClassname = "Background"+classnumber
+				//4. Set it. 
+				$('body').attr('class', newClassname);
+				
+			}
+			function toggleDown()
+			{
+				//1. Get the existing class 
+				var classname = $('body').attr('class');
+				//2. Get it as a number
+				var classnumber = classname.charAt(classname.length-1);
+				//3. Increment it or roll around
+				classnumber--;
+				if (classnumber == -1){
+					classnumber=numpix-1;
+				}
+				var newClassname = "Background"+classnumber
+				//4. Set it. 
+				$('body').attr('class', newClassname);
+				
+			}
+		 </script>
+	<!-- End JavaScript -->
+	
+</head>
+
+<body>
+
+<h1><span class="des">des</span><span class="traynor">traynor</span></h1>
+
+<div class="coda-slider-wrapper">
+	<div class="coda-slider preload" id="coda-slider-1">
+		<div class="panel">
+			<div class="panel-wrapper">
+				<h2 class="title">About</h2>
+				<h3>I&#8217;m Des. I design software.</h3> 
+				<img class="drop-shadow" src="http://destraynor.com/images/des-picture.png" alt="Pic of Des" style="float:right;">  
+				<p>Specifically I design user experiences (UX) and advise companies on what to build in their version one, how to gain customers and how to keep them happy. I do this by understanding the following&#8230;</p> 
+				<ul> 
+						<li>The <em>domain</em> the software is targeting.</li> 
+						<li>The <em>customers</em> the application owner hopes for. </li> 
+						<li>The <em>technical constraints</em> that the software must work within.</li> 
+						<li>The <em>real world data</em> that will be presented within the application.</li> 
+						<li>The <em>tangible measurable goals</em> of the design</li>	
+				</ul> 
+				<p>My work typically involves the production of personas, sketches, and wireframes, followed later in development by measurement via analytics reports and user testing.</p> 
+					
+			</div>
+		</div>
+		<div class="panel">
+			<div class="panel-wrapper">
+				<h2 class="title">Working</h2>
+				<p> I am the User Experience lead at <a href="http://www.contrast.ie">Contrast</a>. We design and develop software for ourselves and for clients. Our own product <a href="http://www.getexceptional.com/">Exceptional</a> is a very popular web based error handler for most popular languages. </p> 
+				<p>My day to day work in Contrast involves meeting clients &amp; their customers to gain a full understanding of the business. Then I design the customer experience that will be most profitable in the long term.</p> 
+				<p>Before Contrast, I was a senior analyst at <a href="http://www.iqcontent.com">iQ Content</a>, Irelands largest usability firm. Previous to that I worked as a lecturer and researcher in <a href="http://www.nuim.ie">NUI Maynooth</a>.</p>
+			</div>
+		</div>
+		<div class="panel">
+			<div class="panel-wrapper">
+				<h2 class="title">Writing</h2>
+				<p>I write primarily on the <a href="http://www.contrast.ie/blog">Contrast Blog</a> and very rarely on my <a href="http://destraynor.com/serendipity">personal blog</a>. Here are some recent articles&#8230;</p>
+				<div style="float:left;"> 
+								<h5>For UX designers</h5> 
+								<ul class="ThreeCol"> 
+										<li><a href="http://www.contrast.ie/blog/infographics-and-data-visualisations/">On info-graphics and data visualisations</a></li> 
+										<li><a href="http://www.contrast.ie/blog/evolution-of-a-dashboard-design/">The evolution of a dashboard</a></li> 
+										<li><a href="http://www.contrast.ie/blog/recall-versus-recognition-for-search/">Recall vs Recognition for Search</a></li> 
+										<li><a href="http://www.contrast.ie/blog/wipe-the-slate-clean/">Wiping the slate clean</a></li> 
+										<li><a href="http://www.contrast.ie/blog/the-thickness-of-napkins/">The thickness of napkins</a></li> 
+										<li><a href="http://www.contrast.ie/blog/design-decisions/">Design decisions for iPhone apps</a></li> 
+										<li><a href="http://www.contrast.ie/blog/wrong-division/">Wrong division</a></li> 
+										<li><a href="http://www.contrast.ie/blog/thinking-in-patterns/">Thinking in patterns</a></li> 
+										<li><a href="http://www.contrast.ie/blog/evolving-ideas/">Evolving ideas</a></li> 
+										<li><a href="http://www.contrast.ie/blog/every-pixel-counts/">Every pixel counts</a></li> 
+										<li><a href="http://www.contrast.ie/blog/the-problem-with-striptease/">The problem with striptease</a></li> 
+								</ul> 
+								</div> 
+								<div style="float:left;"> 
+								<h5>For App Owners</h5> 
+								<ul class="ThreeCol"> 
+				   				<li><a href="http://www.contrast.ie/blog/getting-your-users-on-board/">Getting your users onboard</a></li> 
+				   				<li><a href="http://www.contrast.ie/blog/on-communities-and-content/">Communities &amp; content</a></li> 
+				   				<li><a href="http://www.contrast.ie/blog/your-app-has-launched-now-what/">Your app has launched. Now what?</a></li> 
+				   				<li><a href="http://www.contrast.ie/blog/patience-and-hard-work/">Patience and hard-work</a></li> 
+				   				<li><a href="http://www.contrast.ie/blog/youre-just-getting-started/">You're just getting started</a></li> 
+				   				<li><a href="http://www.contrast.ie/blog/there-are-no-small-changes/">There are no small changes</a></li> 
+				   				<li><a href="http://www.contrast.ie/blog/tasty-little-cupcakes/">Tasty little cupcakes</a></li> 
+								</ul> 
+								</div> 
+								<div style="float:left;"> 
+								<h5>For Consultants of all kinds</h5> 
+								<ul class="ThreeCol"> 
+								<li><a href="http://www.contrast.ie/blog/three-to-tango/">Three to Tango</a></li> 
+								<li><a href="http://www.contrast.ie/blog/the-need-for-speed/">The need for speed</a></li> 
+								<li><a href="http://www.contrast.ie/blog/asking-for-feedback/">Asking for feedback</a></li> 
+								<li><a href="http://www.contrast.ie/blog/the-client-experience/">The client experience</a></li> 
+								<li><a href="http://www.contrast.ie/blog/waiting-for-freddie/">Waiting for Freddie</a></li> 
+								<li><a href="http://www.contrast.ie/blog/flicking-the-switch/">Flicking the switch</a></li> 
+								</ul>	
+								</div>
+				
+			</div>
+		</div>
+		<div class="panel">
+			<div class="panel-wrapper">
+				<h2 class="title">Speaking</h2>
+				<p>I regularly give talks about topics relating to User Experience design, Strategy for start-ups, and the business of web applications. Often I give talks with my co-founder <a href="http://www.eoghanmccabe.com/">Eoghan</a>, which are both informative and entertaining.</p> 
+									<ul> 
+									<li><a href="http://live.visitmix.com/">MIX 2011</a> - upcoming</li> 
+									<li><a href="http://2011.csforum.eu/">CS Forum 2011</a> - upcoming</li> 
+									<li><a href="http://www.ustream.tv/recorded/6903601">FOWA 2010 Dublin</a> - video available</li> 
+									<li><a href="http://futureofwebapps.com/london-2010/">FOWA 2010 London</a> (video restricted to members only)</li> 
+									<li><a href="http://b.lesseverything.com/2009/11/10/web-conventions-by-des-traynor-eoghan-mccabe-at-lessconf">Lessconf 2009</a>- video available</li> 
+									<li><a href="www.flashonthebeach.com/ ">Flash on the Beach 2009</a> - video restricted to members only</li> 
+									<li><a href="http://devdays.info/">Apple Developer Days 2009, 2010</a> (<a href="http://www.slideshare.net/contrast/design-decisions-for-iphone-applications">slides available</a>)</li> 
+									<li><a href="http://thedotconf.wordpress.com/">The Dot Conf 2010</a> - video available</li> 
+									</ul>
+		</div>
+		<div class="panel">
+			<div class="panel-wrapper">
+				<h2 class="title">Contact</h2>
+				<p>I'm on Twitter as <a href="http://www.twitter.com/destraynor">@destraynor</a>. My personal email address is destraynor@gmail.com. For work enquiries, use des@contrast.ie. I also use <a href="http://www.flickr.com/photos/destraynor">Flickr</a> sporadically, own an unmaintained and useless <a href="http://ie.linkedin.com/in/destraynor">LinkedIn account</a>, keep my Facebook to my friends, and I'm not a big fan of phone-calls. </p> 
+			</div>
+		</div>
+	</div><!-- .coda-slider -->
+</div><!-- .coda-slider-wrapper -->
+<div id="switcher"> <a href="#" onClick="toggleDown();">«</a> <a href="#" onClick="toggleUp();">»<a/> 
+</div>
+</body>
+</html>
